@@ -12,6 +12,7 @@
     background: rgba(10, 16, 62, 0.957);
     height: 100%;
     width: 90%;
+    display: flex;
     border-radius: 10px;
 }
 .crash-controller{
@@ -272,4 +273,67 @@
 .crash-footer img{
     width: 130px;
 
+}
+
+.crash-chart{
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.crash-chart-header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+.crash-chart-header-container{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.crash-chart-header-contents{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.crash-chart-header-contents button{
+    background: rgb(13, 177, 13);
+    border: none;
+    padding: 7px 15px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.crash-chart-header-contents .isLower{
+    background: rgb(72, 91, 122);
+    border: none;
+    padding: 7px 15px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.crash-chart-header-contents p{
+    font-size: 11.3px;
+    font-weight: 600;
+    padding: 3px;
+    color: rgb(84, 100, 126);
+}
+.crash-chart-header-contents .isLower:hover{
+    background: rgb(84, 100, 126);
+}
+.crash-chart-header-contents button:hover{
+    background: rgb(13, 122, 13);
+}
+.crash-chart-container{
+    padding: 15px;
+}
+.crash-chart-container canvas{
+    background: rgba(2, 6, 36, 0.522);
+    width: 100%;
+    height: 450px;
 }
