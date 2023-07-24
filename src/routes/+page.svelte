@@ -1,5 +1,4 @@
 <script>
-
     // import function to register Swiper custom elements
     import { register } from 'swiper/element/bundle';
     // register Swiper custom elements
@@ -49,7 +48,6 @@ register();
             <div class="head">
                 <h3>BC <span>IN-HOUSE</span> <br> GAMES </h3>
             </div>
-            .
         </div>
     </div>
 
@@ -60,6 +58,9 @@ register();
         position: relative;
         width: 100%;
         display: block;
+    }
+    .in-house-games{
+        background-color: rgb(28, 30, 34);
     }
 
     swiper-container {

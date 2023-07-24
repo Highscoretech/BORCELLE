@@ -1,6 +1,7 @@
 <script>
     import Navbar from "$lib/navbar.svelte";
     import SideBar from "$lib/sideBar.svelte";
+    import Footer from "$lib/footer.svelte";
 </script>
 
 <div class="app">
@@ -23,7 +24,7 @@
         </main>
     
         <footer>
-            footer
+            <Footer />
         </footer>
     </div>
 </div>
@@ -33,6 +34,16 @@
         position: relative;
         width: 100%;
         height: 4rem;
+    }
+    #right-bar{
+        width: 81%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    main{
+        width: 100%;
+        margin: 10px 0;
     }
     .app{
         display: flex;
@@ -67,5 +78,10 @@
     .menu img{
         width: 0.625rem;
         height: 0.625rem;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 </style>
