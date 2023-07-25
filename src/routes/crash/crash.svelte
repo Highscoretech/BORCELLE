@@ -3,7 +3,7 @@
         <div class="house-egde">
             <span>House Edge 1%</span>
         </div>
-        <canvas style="background-color: grey;" width="968" height="388"></canvas>
+        <canvas  width="968" height="388"></canvas>
     </div>
 </div>
 
@@ -50,5 +50,9 @@
         line-height: 2.25rem;
         color: rgba(153, 164, 176, 0.6);
         background-color: rgba(49, 52, 60, 0.4);
+    }
+    canvas{
+        border-bottom: 1px solid #ffffff1a;
+        border-left: 1px solid #ffffff1a;
     }
 </style>
