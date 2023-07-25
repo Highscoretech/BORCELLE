@@ -1,8 +1,14 @@
+<script>
+    import { Application, Text } from 'svelte-pixi'
+</script>
+
+
 <div class="game-box sbuagsugwq">
     <div class="game-box-container">
         <div class="house-egde">
             <span>House Edge 1%</span>
         </div>
+        
         <canvas  width="968" height="388"></canvas>
     </div>
 </div>
