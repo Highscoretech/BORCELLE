@@ -1,15 +1,42 @@
+<script>
+    	import { Stage, Layer, Text, Rect, Circle, Line } from "svelte-konva";
+</script>
 
 <div class="game-box sbuagsugwq">
     <div class="game-box-container">
         <div class="house-egde">
             <span>House Edge 1%</span>
         </div>
-        <canvas  width="968" height="388"></canvas>
+        <div class="chart-crash">
+            <Stage config={{ width: 518, height: 308 }}>
+                <Layer>
+                    <Text config={{
+                    text: 'Connecting...',
+                    fontSize: 25,
+                    fill: '#ffff',
+                    x: 190,
+                    y: 150,
+                    }}/>
+    
+                    <!-- <Line config={{
+                      x: 20,
+                      y: 200,
+                      points: [0, 0, 100, 0, 100, 100],
+                      tension: 0.5,
+                      closed: true,
+                      stroke: 'black',
+                      fillLinearGradientStartPoint: { x: -50, y: -50 },
+                      fillLinearGradientEndPoint: { x: 50, y: 50 },
+                      fillLinearGradientColorStops: [0, 'red', 1, 'yellow']
+                    }}/> -->
+                </Layer>
+              </Stage>
+        </div>
     </div>
 </div>
 
 <style>
-       .game-box{
+    .game-box{
         position: relative;
         flex: 1 1 0%;
         display: flex;
@@ -35,7 +62,7 @@
     .game-box-container::after{
         content: "";
         display: block;
-        padding-top: 40%;
+        padding-top: 0%;
     }
     .house-egde{
         position: absolute;
@@ -52,8 +79,10 @@
         color: rgba(153, 164, 176, 0.6);
         background-color: rgba(49, 52, 60, 0.4);
     }
-    canvas{
+    .chart-crash{
+        width: 518px; height: 308px;
         border-bottom: 1px solid #ffffff1a;
         border-left: 1px solid #ffffff1a;
     }
+
 </style>
